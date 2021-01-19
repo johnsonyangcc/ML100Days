@@ -62,7 +62,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 64,
+   "execution_count": 69,
    "metadata": {},
    "outputs": [
     {
@@ -71,18 +71,18 @@
        "array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18, 20])"
       ]
      },
-     "execution_count": 64,
+     "execution_count": 69,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "a[0:21:2]"
+    "a[::2]"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 62,
+   "execution_count": 68,
    "metadata": {},
    "outputs": [
     {
@@ -91,13 +91,13 @@
        "array([ 3,  6,  9, 12, 15, 18])"
       ]
      },
-     "execution_count": 62,
+     "execution_count": 68,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "a[3:21:3]"
+    "a[3::3]"
    ]
   },
   {
