@@ -42,24 +42,27 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 37,
+   "execution_count": 38,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "3\n"
-     ]
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
     }
    ],
    "source": [
-    "print(\"3\")"
+    "np.sum(np.greater(english_score, math_score))"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 35,
+   "execution_count": 40,
    "metadata": {},
    "outputs": [
     {
@@ -68,19 +71,18 @@
        "array([ True,  True,  True,  True,  True,  True])"
       ]
      },
-     "execution_count": 35,
+     "execution_count": 40,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "array = np.logical_and(chinese_score>english_score, chinese_score>math_score) \n",
-    "array"
+    "np.logical_and(chinese_score>english_score, chinese_score>math_score)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 36,
+   "execution_count": 41,
    "metadata": {},
    "outputs": [
     {
@@ -89,13 +91,13 @@
        "True"
       ]
      },
-     "execution_count": 36,
+     "execution_count": 41,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "np.all(array)"
+    "np.all(np.logical_and(chinese_score>english_score, chinese_score>math_score))"
    ]
   }
  ],
